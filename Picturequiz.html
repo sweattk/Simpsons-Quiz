@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>A Song of Ice and Fire Quiz</title>
+    <link href="https://fonts.googleapis.com/css?family=Uncial+Antiqua" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya" rel="stylesheet">
+    <link rel="stylesheet" href="float-grid.css" />
+    <link href="Picturequiz.css" rel="stylesheet" type="text/css" />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Pattaya&display=swap');
+      </style>
+  </head>
+  <body>
+    <!-- this is a test -->
+
+
+    <div class='header-div'>
+      <header role='banner' class='row'>
+        <h1> QUIZ Of Horror</h1>
+      </header>
+    </div>
+    <div class='start-page-div row'>
+      <div class='start-page-middle'>
+        <h2 class='start-page-header start-page-header-quote'>
+          "WHEN YOU PLAY THE QUIZ  YOU'LL NEVER WIN."
+        </h2>
+        <p class='start-page-header start-page-header-author'>-Kalvin Sweatt</p>
+        <form class='start-page-form'>
+          <button type="button" class='start-button main-font'>Enter at your own risk</button>
+        </form>
+      </div>
+    </div>
+    <main role='main'>
+      <div class='quiz-div quiz-col hidden'>
+        <form class='main-quiz-form row'>
+          <div role='radiogroup' aria-label='quiz-question-and-answers'>
+            <p class='quiz-questions'></p>
+            <div>
+              <div class="answer-to-question">
+                <input type="radio" id="" name="answer" value="" data-index="" checked>
+                <label for=""></label>
+              </div>
+              <div class="answer-to-question">
+                <input type="radio" id="" name="answer" value="" data-index="" >
+                <label for=""></label>
+              </div>
+              <div class="answer-to-question">
+                <input type="radio" id="" name="answer" value="" data-index="" >
+                <label for=""></label>
+              </div>
+              <div class="answer-to-question">
+                <input type="radio" id="" name="answer" value="" data-index="" >
+                <label for=""></label>
+              </div>
+            </div>
+          </div>
+          <button type="button" class='submit-question'>Hurry Submit answer</button>
+          <div class='score-and-question'>
+            <div class='current-question-div'>
+            </div>
+            <div class='current-score-div'>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <div class='row final-results hidden'>
+        <p class='final-score-paragraph'>
+        <p>
+        <button class="start-over final-score-button">Play Again suckah</button>
+      </div>
+    </main>
+    <div class='pop-outer pop-outer-incorrect'>
+      <div class='pop-inner pop-inner-incorrect row'>
+        <button class='close'>X</button>
+        <h2 class='heading-incorrect' style="font-size:medium">SORRY >&#128083;</h2>
+        <img class='pop-up-image Homer' src='https://media2.giphy.com/media/3o6Mb7tozWlz87r3BC/200w.gif?cid=82a1493by0hdiqxwm4548xi9dp6ecjkzciwbtpa1wqd371y2&rid=200w.gif&ct=g' alt='The simpsons are on the couch.'>
+        <p class='pop-up-text'></p>
+      </div>
+    </div>
+    <div class='pop-outer pop-outer-correct'>
+      <div class='pop-inner pop-inner-correct row'>
+        <button class='close'>X</button>
+        <h2 class='heading-correct'>CORRECT</h2>
+        <img class='pop-up-image Treehouse of Horror' src='https://media.tenor.com/images/1d2352a2a83d696aa5d0ef3d1cdb8744/tenor.gif' alt='TreeHouse of The_Simpsons_Treehouse_of_Horror_XXI'>
+        <p class='pop-up-text'></p>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="picturequiz.js"></script>
+  </body>
+</html>
